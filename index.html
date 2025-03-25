@@ -1,1 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<link rel="stylesheet" href="css/new_file.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>馒头 叉叉</title>
+    <style>
+        /* 基础样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', '微软雅黑', sans-serif;
+        }
 
+        /* 整体布局 */
+        body {
+            background-color: #f5f5f5;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* 头部样式 */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* 主内容容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 卡片式布局 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 图片样式 */
+        .card-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 3px solid #3498db;
+        }
+
+        /* 文字内容区域 */
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-title {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5em;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>馒头and叉叉の双影之旅</h1>
+        <p>和叉叉到处都是奇境</p>
+    </header>
+
+    <div class="container">
+        <!-- 卡片容器 -->
+        <div class="card-grid">
+            <!-- 示例卡片1 -->
+            <article class="card">
+                <!-- 假设图片存放在项目目录的 images 文件夹 -->
+                <img src="img/xx1.jpg" 
+				class="card-img"
+				width="1920" 
+				height="1080"
+				alt="" />
+                <div class="card-content">
+                    <div class="card-date">2025年3月23日</div>
+                    <h2 class="card-title">爆炸就是艺术</h2>
+                    <p>伴随着一场剧烈的爆炸，馒头和叉叉的奇境之旅正式启程！</p>
+                </div>
+            </article>
+
+            <!-- 示例卡片2 -->
+            <article class="card">
+                <img src="img/xx2.jpg" 
+				class="card-img"
+				width="1920"
+				height="1080"
+				alt="" />
+                <div class="card-content">
+                    <div class="card-date">2025年3月23日</div>
+                    <h2 class="card-title">歪嘴咪咪</h2>
+                    <p>在和地铁大人进行了无数次的搏斗之后，叉叉和馒头终于来到了咪咪面前。感谢只知大人赐予的</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="img/xx5.jpg" 
+            	class="card-img"
+            	width="1920"
+            	height="1080"
+            	alt="" />
+                <div class="card-content">
+                    <div class="card-date">2025年3月23日</div>
+                    <h2 class="card-title">赛博失败的man</h2>
+                    <p>光是看一眼就开始头晕的炫酷跑酷环节</p>
+                </div>
+            </article>
+			
+            <article class="card">
+                <img src="img/xx2_1.png" 
+            	class="card-img"
+            	width="1920"
+            	height="1080"
+            	alt="" />
+                <div class="card-content">
+                    <div class="card-date">2025年3月23日</div>
+                    <h2 class="card-title">叮！对方已断开链接！</h2>
+                    <p>强如馒头大人也摆在了宿舍断电之下...今日份馒头 叉叉之旅就到此结束了<br><b>To Be Countine...</b></p>
+                </div>
+            </article>
+			
+			<article class="card">
+			    <img src="img/xx6.jpg"
+				class="card-img"
+				width="1920"
+				height="1080"
+				alt="" />
+			    <div class="card-content">
+			        <div class="card-date">2025年3月24日</div>
+			        <h2 class="card-title">变形者之旅</h2>
+			        <p>不对！我这么炫酷的大猩猩怎么变成小宠物画风了！</p>
+			    </div>
+			</article>
+			<article class="card">
+			    <img src="img/xx7.jpg"
+				class="card-img"
+				width="1920"
+				height="1080"
+				alt="" />
+			    <div class="card-content">
+			        <div class="card-date">2025年3月24日</div>
+			        <h2 class="card-title">重生之猴王霹雳舞</h2>
+			        <p>哈哈哈哈哈哈哈哈哈哈哈哈！怎么会有这么难跳的舞！这不是欺负我们老年人吗！（经此一役，叉叉的wasd键如遭大刑）</p>
+			    </div>
+			</article>
+			<article class="card">
+			    <img src="img/xx8.jpg"
+				class="card-img"
+				width="1920"
+				height="1080"
+				alt="" />
+			    <div class="card-content">
+			        <div class="card-date">2025年3月24日</div>
+			        <h2 class="card-title">反派的超级豪华宫殿</h2>
+			        <p>抗议！叉叉竟然放着这么漂亮的景色不看，在这觊觎我的大屁股！</p>
+			    </div>
+			</article>
+			<article class="card">
+			    <img src="img/xx9.jpg"
+				class="card-img"
+				width="1920"
+				height="1080"
+				alt="" />
+			    <div class="card-content">
+			        <div class="card-date">2025年3月24日</div>
+			        <h2 class="card-title">警告⚠！太阳即将坠落！</h2>
+			        <p>在这危难关头！馒头和叉叉挺身而出！直奔不断爆发的太阳！让我们一起拯救这个世界吧！叉叉！</p>
+			    </div>
+			</article>
+        </div>
+    </div>
+
+    <footer>
+        <p>馒头and叉叉の双影之旅</p>
+    </footer>
+</body>
+</html>
